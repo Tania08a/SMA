@@ -1,0 +1,65 @@
+@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.img-sin-espacios {
+  margin: 0 !important;
+  padding: 0 !important;
+  border: none !important;
+  display: block; /* Opcional, pero útil para eliminar espacios extras */
+}
+
+
+:root {
+    --primary: #F97316; /* Naranja principal */
+    --secondary: #6a0dad; /* Color de hover */
+    --accent-light: #ffe8d6; /* Fondo de hover */
+    --textColor: #000; /* Color de texto */
+  }
+  
+  .bg-primary {
+    background-color: var(--primary);
+  }
+  
+  .text-primary {
+    color: var(--primary);
+  }
+  
+  .text-textColor {
+    color: var(--textColor);
+  }
+  
+  .hover\:text-secondary:hover {
+    color: var(--secondary);
+  }
+  
+  .bg-accent-light {
+    background-color: var(--accent-light);
+  }
+  
+  .hover\:bg-accent-light:hover {
+    background-color: var(--accent-light);
+  }
+  
+
+  /* Scrollbar más elegante */
+.scrollbar-custom::-webkit-scrollbar {
+  height: 6px;
+}
+
+.scrollbar-custom::-webkit-scrollbar-thumb {
+  background-color: #9233ea2e; /* Morado */
+  border-radius: 10px;
+}
+
+.scrollbar-custom::-webkit-scrollbar-track {
+  background: #f3f4f600;
+}
