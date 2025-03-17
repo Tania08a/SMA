@@ -1,20 +1,18 @@
 import Comunidad from "../components/Comunidad";
 import Valores from "../components/Valors";
 import LinkPreview from "../components/LinkPreview";
-import { newsData } from "../data/newsData";
 import DonateButton from "../components/DonateButton";
 
 
 import React, { useState, useEffect } from "react";
 import { FaHandHoldingMedical, FaUsers, FaDonate } from "react-icons/fa";
 const Home = () => {
-  // Array de fotos (puedes reemplazar las URLs con las tuyas)
   const fotos = [
-    "https://res.cloudinary.com/df6cxn8ga/image/upload/v1741496771/Copia_de_DSC_2732_1_rvu30v.jpg",
-    "https://res.cloudinary.com/df6cxn8ga/image/upload/v1741496767/Copia_de_DSC_2759_rsffmk.jpg",
-    "https://res.cloudinary.com/df6cxn8ga/image/upload/v1741496781/Copia_de_DSC_2761_urtkhb.jpg",
-    "https://res.cloudinary.com/df6cxn8ga/image/upload/v1741496776/Copia_de_IMG_1697_tmn7tq.jpg",
-    "https://res.cloudinary.com/df6cxn8ga/image/upload/v1741496773/Copia_de_DSC_2743_jwdvb9.jpg",
+    "https://res.cloudinary.com/df6cxn8ga/image/upload/v1741587596/Copia_de_DSC_2756_npiiaz.jpg",
+    "https://res.cloudinary.com/df6cxn8ga/image/upload/v1741587590/Copia_de_DSC_2763_hcyc0e.jpg",
+    "https://res.cloudinary.com/df6cxn8ga/image/upload/v1741587573/Copia_de_DSC_2732_h0kpsc.jpg",
+    "https://res.cloudinary.com/df6cxn8ga/image/upload/v1741587551/Copia_de_IMG_1697_gjezus.jpg",
+    "https://res.cloudinary.com/df6cxn8ga/image/upload/v1741587583/Copia_de_DSC_2743_eh5he6.jpg",
   ];
 
   const [fotoActual, setFotoActual] = useState(0);
@@ -22,7 +20,7 @@ const Home = () => {
   useEffect(() => {
     const intervalo = setInterval(() => {
       setFotoActual((prev) => (prev + 1) % fotos.length);
-    }, 5000); // Cambia la foto cada 5 segundos
+    }, 5000);
 
     return () => clearInterval(intervalo);
   }, [fotos.length]);
@@ -32,7 +30,7 @@ const Home = () => {
       {/* Sección Hero Full Bleed */}
       <div className="relative w-screen min-h-[100vh] overflow-hidden left-1/2 ml-[-50vw] mr-[-50vw]">
         <img
-          src="https://res.cloudinary.com/df6cxn8ga/image/upload/v1741051882/comunidad_upeo3y.jpg"
+          src="https://res.cloudinary.com/df6cxn8ga/image/upload/v1741587959/Copia_de_DSC_2774_sef6ib.jpg"
           alt="Comunidad"
           className="absolute inset-0 object-cover w-full h-full"
         />
@@ -62,7 +60,7 @@ const Home = () => {
           <h2 className="text-3xl md:text-4xl font-bold text-center text-purple-700 mb-8">
             Noticias Recientes
           </h2>
-          <LinkPreview links={newsData} />
+          <LinkPreview />
         </div>
       <div className="py-20 bg-gray-50 ">
         <div className="container mx-auto px-6">

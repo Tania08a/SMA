@@ -9,10 +9,9 @@ const AboutAME = () => {
 
   return (
     <>
-      {/* Sección Hero: imagen de fondo a pantalla completa sin márgenes */}
       <div className="relative w-screen h-screen overflow-hidden left-1/2 ml-[-50vw] mr-[-50vw]">
         <img
-          src="https://res.cloudinary.com/df6cxn8ga/image/upload/v1741224090/queEs_lti80x.jpg"
+          src="https://res.cloudinary.com/df6cxn8ga/image/upload/v1741587591/Copia_de_DSC_2742_dk2cdy.jpg"
           alt="Fondo"
           className="absolute inset-0 object-cover w-full h-full"
         />
@@ -39,7 +38,6 @@ const AboutAME = () => {
 
       {/* Sección Interactiva: Causa genética de la AME */}
       <div className="container mx-auto p-10 flex flex-col md:flex-row items-center gap-10">
-        {/* Sección Interactiva: Causa genética de la AME */}
         <div className="w-full md:w-1/3 flex flex-col items-center">
           <img
             src="https://res.cloudinary.com/df6cxn8ga/image/upload/v1741295452/Causa_vjgcts.jpg"
@@ -241,7 +239,7 @@ const AboutAME = () => {
 
             <div className="flex flex-col md:flex-row items-center">
             <img 
-              src="https://res.cloudinary.com/df6cxn8ga/image/upload/v1741398580/IMG_20241013_144604_1_ndth0k.jpg"
+              src="https://res.cloudinary.com/df6cxn8ga/image/upload/v1741587657/IMG_20241013_144604_1_frro8l.jpg"
               alt="Terapia Génica" 
               className="w-full md:w-1/3 rounded-lg mb-4 md:mb-0" 
             />

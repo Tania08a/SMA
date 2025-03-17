@@ -1,13 +1,36 @@
-import React from "react";
-import { newsData } from "../data/newsData";
+import React, { useState, useEffect } from "react";
+import { db } from "../utilities/FirebaseConfig";
+import { collection, getDocs } from "firebase/firestore";
 
 const News = () => {
+  const [newsData, setNewsData] = useState([]);
+
+  useEffect(() => {
+    const fetchNews = async () => {
+      try {
+        // Cambia "noticias" por "noticia"
+        const newsRef = collection(db, "noticia");
+        const snapshot = await getDocs(newsRef);
+
+        const news = snapshot.docs.map((doc) => ({
+          id: doc.id,
+          ...doc.data(),
+        }));
+
+        setNewsData(news);
+      } catch (error) {
+        console.error("Error obteniendo noticias:", error);
+      }
+    };
+
+    fetchNews();
+  }, []);
+
   return (
     <div className="max-w-7xl mx-auto p-6">
-
       <div className="relative w-screen h-screen overflow-hidden left-1/2 ml-[-50vw] mr-[-50vw]">
         <img
-          src="https://res.cloudinary.com/df6cxn8ga/image/upload/v1741391831/sobreAME_w3yiqg.jpg"
+          src="https://res.cloudinary.com/df6cxn8ga/image/upload/v1741587554/IMG_1682_vd0aza.jpg"
           alt="Fondo"
           className="absolute inset-0 object-cover w-full h-full"
         />
@@ -17,8 +40,6 @@ const News = () => {
           <h1>Noticias de la AME</h1>
         </div>
       </div>
-
-
 
       <h1 className="text-3xl font-bold text-center mt-25 text-purple-700">
         Noticias y novedades de la AME

@@ -45,7 +45,7 @@ const Comunidad = () => {
         {/* Contenedor de texto (Comunidad, Nombre y Descripción) */}
         <div className="max-w-xl text-left flex flex-col justify-end h-full">
           <h2 className="text-3xl font-bold text-gray-700 ">Comunidad</h2>
-          <h3 className="text-xl font-bold mt-20">{comunidadData[index].nombre}</h3>
+          <h3 className="text-xl font-bold mt-6 md:mt-12 lg:mt-20">{comunidadData[index].nombre}</h3>
           <p className="text-gray-600 mt-2">{comunidadData[index].descripcion}</p>
         </div>
       </div>

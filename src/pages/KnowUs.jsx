@@ -6,7 +6,7 @@ const KnowUs = () => {
       <div>
         <div className="relative w-screen h-screen overflow-hidden left-1/2 ml-[-50vw] mr-[-50vw]">
         <img
-          src="https://res.cloudinary.com/df6cxn8ga/image/upload/v1741392001/Copia_de_DSC_0075_ju1iyb.jpg"
+          src="https://res.cloudinary.com/df6cxn8ga/image/upload/v1741587959/Copia_de_DSC_0075_kdl3pc.jpg"
           alt="Fondo"
           className="absolute inset-0 object-cover w-full h-full"
         />

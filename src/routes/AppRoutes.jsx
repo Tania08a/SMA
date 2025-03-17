@@ -6,6 +6,7 @@ import KnowUs from "../pages/KnowUs";
 import News from "../pages/News";
 import Care from "../pages/Care";
 import Activities from "../pages/Activities";
+import Donate from "../pages/Donate"; 
 
 const AppRoutes = () => {
   return (
@@ -18,7 +19,7 @@ const AppRoutes = () => {
           <Route path="/noticias" element={<News />} />
           <Route path="/care" element={<Care />} />
           <Route path="/activities" element={<Activities />} />
-
+          <Route path="/donate" element={<Donate />} /> 
         </Routes>
       </MainLayout>
     </Router>

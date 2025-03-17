@@ -1,5 +1,5 @@
 import { useState, useRef, useEffect } from "react";
-import DonateButton from "../components/DonateButton";
+import DonateButton from "../components/rutDonate";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -77,7 +77,7 @@ const Header = () => {
               </button>
 
               {/* Submenú */}
-              <ul className={`absolute left-0 mt-1 bg-white shadow-md rounded-md w-40 transition-all duration-200 ${activeSubMenu === "ame" ? "opacity-100 scale-100" : "opacity-0 scale-95 pointer-events-none"}`}>
+              <ul className={`absolute left-0 top-full bg-white shadow-md rounded-md w-40 z-50 transition-all duration-200 ${activeSubMenu === "ame" ? "opacity-100 scale-100" : "opacity-0 scale-95 pointer-events-none"}`}>
                 <li>
                   <a href="/about-ame" className="block py-2 px-4 text-textColor hover:bg-accent-light lg:hover:text-accent transition rounded-md">
                     Información
@@ -103,7 +103,7 @@ const Header = () => {
               </button>
 
               {/* Submenú */}
-              <ul className={`absolute left-0 mt-1 bg-white shadow-md rounded-md w-40 transition-all duration-200 ${activeSubMenu === "fundacion" ? "opacity-100 scale-100" : "opacity-0 scale-95 pointer-events-none"}`}>
+              <ul className={`absolute left-0 top-full bg-white shadow-md rounded-md w-40 z-50 transition-all duration-200 ${activeSubMenu === "fundacion" ? "opacity-100 scale-100" : "opacity-0 scale-95 pointer-events-none"}`}>
                 <li>
                   <a href="/conocenos" className="block py-2 px-4 text-textColor hover:bg-accent-light lg:hover:text-accent transition rounded-md">
                     Conócenos

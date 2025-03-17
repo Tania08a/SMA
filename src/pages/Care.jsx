@@ -218,7 +218,7 @@ const Care = () => {
 
       <div className=" relative w-screen h-screen overflow-hidden left-1/2 ml-[-50vw] mr-[-50vw]">
         <img
-          src="https://res.cloudinary.com/df6cxn8ga/image/upload/v1741477229/Copia_de_DSC_2760_epwn5m.jpg"
+          src="https://res.cloudinary.com/df6cxn8ga/image/upload/v1741897673/Copia_de_DSC_2760_q6hct7.jpg"
           alt="Fondo"
           className="absolute inset-0 object-cover w-full h-full"
         />
